@@ -1,4 +1,28 @@
 # PDF_sep_pages
 Python Skript, das aus einer vorhandenen PDF-Datei definierte Seiten extrahiert und in einer neuen PDF Datei speichert.
 
-# Aufruf über die Konsole
+## Aufruf über die Konsole
+Das Skript kann über die Konsole aufgerufen werden.
+Der Befehl heirfür ist in folgender Form aufgebaut:
+```
+python PDF_sep_pages.py <start_page> <end_page>
+```
+Die Angabe der <end_page> ist optional. Wenn nur ein Argument <start_page> übergeben wird, dann wird nur die angegebene Seite extrahiert.
+
+## Dateiname der neuen Datei
+Das Python Skript speichert die neue Datei automatisch, wobei sich der Dateiname aus dem Namen der vorhandenen Datei und den zu extrahierenden Seiten zusammensetzt.<br>
+```
+<Dateiname>_p<start_page>_to_<end_page>
+```
+Wenn für das Argument <end_page> nichts übergeben wird, dann ergibt sich der neue Dateiname zu
+```
+<Dateiname>_p<start_page>
+```
+
+### Beispiel
+Aus dem Dokument <b>example.pdf</b> sollen die Seiten 1 bis 2 extrahiert und in einer neuen PDF-Datei gespeichert werden.
+Der Befehl hierfür lautet:
+```
+python PDF_sep_pages.py example.pdf 1 2
+```
+Das Skript speichert im Verzeichnis der Originaldatei eine neue Datei mit dem Dateinamen <b>example_p1_to_2.pdf</b>, die die extrahierten Seiten enthält.<br>
