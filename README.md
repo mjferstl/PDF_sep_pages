@@ -1,5 +1,5 @@
-# PDF_sep_pages
-Python Skript, das aus einer vorhandenen PDF-Datei definierte Seiten extrahiert und in einer neuen PDF Datei speichert.
+# Extrahieren bestimmter Seiten aus einer PDF-Datei
+Das Python Skript `PDF_sep_pages.py` extrahiert aus einer vorhandenen PDF-Datei definierte Seiten und speichert diese in einer neuen PDF Datei.
 
 ## Abhängigkeiten
 Bei der Ausführung des Skripts werden folgende Module genutzt, die auf dem Rechner vorab installiert sein müssen
